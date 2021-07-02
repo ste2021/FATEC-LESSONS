@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+}
+
+.caixa {
+    box-sizing: border-box;
+  }
+  
+.titulo {
+    margin: 20px;
+    position: relative;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.italiaflag{
+    padding: 10px;
+    
+	width: 600px;
+	height: 400px;
+	/*background-color: green;*/
+	position: relative;
+}
+
+
+.verde {
+    border: .5px solid #01040a;
+    position: absolute;
+	display: inline-block;
+	float: left;
+	background-color: #009344;
+	width: 200px;
+	height: 400px;
+}
+
+.branco {
+    border: .5px solid #01040a;
+    position: absolute;
+	float: left;
+	background-color: #ffffff;
+	margin-left: 200px;
+	width: 200px;
+	height: 400px;
+}
+
+.vermelho {
+    border: .5px solid #01040a;
+    position: absolute;
+	float: left;
+	margin-left: 400px;
+	background-color: #cf2734;
+	width: 200px;
+	height: 400px;
+}
+
+
+footer {
+    text-align: center;
+    color: rgb(236, 225, 236);
+    text-align: center;
+    background-color: rgb(6, 75, 9);
+    width: 100%;
+    height: auto;
+    padding: 05px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

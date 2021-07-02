@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+	<title>Flexbox - exemplo2 - Estrutura</title>
+	<style type="text/css" media="screen">
+	 	* {
+		    box-sizing: border-box; /* para garantir que os containers respeitem o tamanho definido se serem afetados por border e padding */
+		  }
+          
+		  body {               /* container pegando toda a área do corpo do navegador */
+		    display: flex;
+		    min-height 100vh; /* usando medidas responsivas - 100% do comprimento da tela*/
+		    flex-direction: row; /*para acomodar os meus itens (3)*/
+		    margin: 0;
+		  }
+         
+		  .col-1 {                   /* coluna do bloco de navegação Primeiro item do container */
+		    background: #69c7c4;
+		    flex: 1; /*fator do flex-grow*/
+		  }
+		  .col-2 {
+		    flex-direction: column; /* definir o segundo bloco como coluna - irá contem header, article, aside e footer*/
+		    flex: 5;/*aumentou o flex-grow pois será o bloco principal*/
+		  }
+		  
+		 
+          .content {
+		    display: flex;
+		    flex-direction: row; /* dentro do bloco principal os itens serão colocados em linha*/
+		  }
+		  .content1 {
+           min-height: 50vh; /* definir um tamanho minimo para o conteúdo do article */
+           flex: 3
+		  }
+          .content2 {
+            background:greenyellow;
+            flex: 1   /* definir um tamanho menor para o bloco do Aside  */
+          }
+		  header, footer {
+		    background: #1b9a96;
+		    height: 20vh;
+		  }
+		  header, footer, article, nav, aside {
+		    padding: 1em;  /* medida responsiva = 16px*/
+		  }
+	  }
+	</style>
+</head>
+
+<body>
+  <nav class="col-1">NAVEGAÇÃO <!--Primeira coluna flex-->
+	
+  </nav>
+    <div class="col-2"> <!-- Segunda coluna Flex - Blocão principal-->
+        <header> CABEÇALHO 
+        
+        </header>
+        <main class="content"> <!--bloco do conteúdo principal, aside e footer-->
+        <article class="content1">CONTEÚDO <!--bloco do conteúdo principal-->
+
+        </article>
+        <aside class="content2">ASIDE <!--definição do ASIDE dentro do bloco de content. O item flex é uma próxima coluna-->
+            
+        </aside>
+        </main>
+        <footer>RODAPÉ
+            
+        </footer>
+  </div>
+  </body>
+</html>

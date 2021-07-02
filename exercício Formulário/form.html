@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width ,initial-scale=1" />
+
+
+    <title>Formulario</title>
+
+    <style>
+    * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 18px;
+        }
+        
+        body {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            min-height: 100vh;
+            background-color: rgb(243, 243, 243);
+            justify-content: center;
+        }
+        
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            justify-content: left;
+            align-items: center;
+            border: 1px solid gray;
+        }
+        
+        .h1 {
+            width: 15%;
+            margin-left: 2%;
+            padding: 5px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid gray;
+            z-index: 1;
+            background-color: lightgrey;
+        }
+        
+        .h20 {
+            width: 30%;
+            margin-top: -2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            padding: 5px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid gray;
+            z-index: 1;
+            height: 20%;
+        }
+        
+        .h21 {
+            width: 28%;
+            margin-top: -2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            padding: 5px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid gray;
+            z-index: 1;
+        }
+        
+        .h22 {
+            width: 15%;
+            margin-top: -2%;
+            margin-left: 2%;
+            margin-bottom: 3%;
+            height: 20%;
+            padding: 5px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid gray;
+            z-index: 1;
+        }
+        
+        .cadastro {
+            display: flex;
+            flex-direction: column;
+            width: 90vw;
+            margin-top: 20px;
+            padding-left: 10px;
+            justify-content: space-around;
+            border: 1px solid gray;
+        }
+        
+        .bloco1 {
+            display: flex;
+            padding-left: 10 px;
+            margin-top: -10px;
+            text-align: center;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: left;
+            width: 98%;
+            height: 33vh;
+            justify-content: space-around;
+            border: 1px solid gray;
+            background-color: lightyellow;
+        }
+        
+        .dados {
+            display: flex;
+            padding-left: 10px;
+            margin-top: 27px;
+            flex-direction: column;
+            align-items: baseline;
+            justify-content: left;
+            width: 47%;
+            height: 25vh;
+            border: 1px solid gray;
+            background-color: lightblue;
+        }
+        
+        .localiza {
+            display: flex;
+            padding-left: 10px;
+            margin-top: 27px;
+            flex-direction: column;
+            align-items: baseline;
+            justify-content: left;
+            width: 47%;
+            height: 25vh;
+            border: 1px solid gray;
+            background-color: lightgreen;
+        }
+        
+        .bloco2 {
+            display: -webkit-box;
+            margin-top: 3%;
+            align-self: auto;
+            justify-content: space-around;
+            text-align: center;
+            padding-top: 5px;
+            width: 98%;
+            height: 25vh;
+            border: 1px solid gray;
+            background-color: lightpink;
+        }
+        
+        .parte {
+            display: -ms-flexbox;
+            -webkit-box;
+            margin-top: 2%;
+            text-align: justify;
+            margin-left: -200px;
+            padding-left: 10%;
+            align-items: left;
+            width: 50%;
+        }
+        
+        .esporte {
+            display: flex;
+            font-display: inherit;
+            align-content: space-between;
+            align-content: flex-start;
+            text-align: left;
+            margin-top: 3%;
+            width: 100%;
+            padding: 0.4rem 0;
+            height: 30vh;
+            border: 1px solid gray;
+            background-color: lightgrey;
+
+            
+        }
+        
+        .envio {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: 40vh;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid gray;
+        }
+        
+        .comentario {
+            margin-top: 5%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .request{
+  			font-family: Helvetica;
+  			font-weight: bold;
+  			font-size:16px;
+		}
+
+
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="/actionpage.php" class="cadastro">
+            <div class="h1">
+                <h1>Cadatro Geral</h1>
+            </div>
+
+            <div class="bloco1">
+                <div class="dados">
+                    
+                    <div class="h20">
+                        <h2>Dados pessoais</h2>
+                    </div>
+
+                    <label for="nome" class=request> Nome completo:</label>
+                    <input type="text" name="nome" id="nome" required placeholder="Seu nome aqui"> <br>
+                    <label for="profissao" class=request>Profissão</label>
+                    <input type="text" id="profissao" name="profissao" required placeholder="Sua profissão">
+                </div>
+                
+                <div class="localiza">
+                    <div class="h21">
+                        <h2>Localização</h2>
+                    </div>
+
+                    <label for="email" class=request>E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="fulano@fulanandia.com"><br>
+                    <label for="endereco" class=request>Endereço</label>
+                    <input type="adress" id="endereco" name="endereco" required placeholder="Rua Zumbilândia, s/nº - Metrópole">
+                </div>
+            </div>
+
+            <div class="bloco2">
+                <div class="h22">
+                    <h2>Faixa etária</h2>
+                </div>
+                <br>
+                <div class="parte">
+                    <input type="radio" id="20" name="idade" value="20">
+                    <label for="20">até 20 anos</label><br/><br/>
+                    <input type="radio" id="30" name="idade" value="30">
+                    <label for="30">entre 21 e 30 anos</label><br/><br/>
+                    <input type="radio" id="40" name="idade" value="40">
+                    <label for="40">entre 31 e 40 anos</label>
+                </div>
+
+                <div class="parte">
+                    <input type="radio" id="50" name="idade" value="50">
+                    <label for="50">entre 41 e 50 anos</label><br/><br/>
+                    <input type="radio" id="60" name="idade" value="60">
+                    <label for="50">entre 51 e 60 anos</label><br/><br/>
+                    <input type="radio" id="60a" name="idade" value="60a">
+                    <label for="60a">acima de 60 anos</label>
+                </div>
+
+            </div>
+
+            <div class="esporte">
+                <div class="h20">
+                    <h2>Esportes que pratica</h2>
+                </div>
+                <br>
+                <div class="parte">
+                <input type="checkbox" name="esporte" value="1">
+                <label for="futebol"> Futebol de campo <br>
+                <input type="checkbox" name="esporte" value="2">
+                <label for="futebol"> Futebol de salão <br>
+                <input type="checkbox" name="esporte" value="3">
+                <label for="futebol"> Futebol society <br>
+                <input type="checkbox" name="esporte" value="4">
+                <label for="futebol"> Volley de quadra <br>
+                <input type="checkbox" name="esporte" value="5">
+                <label for="futebol"> Futebol de praia <br>
+                <input type="checkbox" name="esporte" value="6">
+                <label for="futebol"> Nataçao em piscina <br>
+                <input type="checkbox" name="esporte" value="7">
+                <label for="futebol"> Natação em mar aberto <br>
+            </div>
+        </div>
+            <br>
+
+            <div class="comentario">
+                <h2>Comentário</h2>
+                Mensagem:<br/>
+                <textarea rows="10" cols="90"></textarea>
+            </div>
+            
+            <br>
+
+            <aside>
+            <input type="submit" value="Enviar">
+            <br>
+            <input type="reset" value="Limpar">
+            </aside>
+            
+        </form>
+    </div>
+
+</body>

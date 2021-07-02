@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <title>Flexbox - exemplo1</title>
+    <style type="text/css" media="screen">
+* {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #e1e6e2;
+            display: flex;
+            min-height: 100vh;
+            /* usando medidas responsivas - 100% do comprimento da tela*/
+            flex-direction: row;
+            /para acomodar os meus itens (2)/
+            margin: 0;
+            word-break: keep-all;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+        }
+        
+        .col-1 {
+            flex: 1;
+            /fator do flex-grow/
+            line-height: 3.4em;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8em;
+            font-weight: bolder;
+            border: solid 0.1em black;
+            border-radius: 0.7em;
+            background-color: #B6FF7C;
+            margin-right: 4px;
+        }
+    }
+    .col-2 {
+        flex-direction: column;
+        /* definir o segundo bloco como coluna*/
+        
+        flex: 10;
+        /aumentou o flex-grow/
+    }
+    .content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        /* dentro do bloco de conteúdo os itens serão colocados em linha*/
+    }
+    .imagem {
+        width: 16em;
+        height: 20vh;
+        margin: 0 0 0 0;
+        border: solid 0.1em black;
+    }
+    h1.titulo {
+        font-family: roboto, "Segoe UI", Arial, Helvetica, sans-serif;
+        font-size: 1.8em;
+        /*text-shadow: 0.1em 0.1em rgb(155, 149, 149);*/
+        color: #ffffff;
+        /* align-self: stretch; */
+        
+        padding-left: 0.5em;
+    }
+    p.titulo {
+        font-family: "Lucida Console", "Courier New", monospace, Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: 200;
+        font-style: italic;
+        color: #ffffff;
+    }
+    p1 {
+        /*padding: 0mm;*/
+        font-weight: bolder;
+    }
+    .bloco {
+        width: 50vw;
+        height: 60vh;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border: solid 0.2em black;
+        background-image: url('https://images.unsplash.com/photo-1510526292299-20af3f62d453?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1014&q=80');
+        background-size: 50vw 60vh;
+        justify-content: stretch;
+        margin: 8px;
+    }
+    .bloco2 {
+        width: 25vw;
+        height: 60vh;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border: solid 0.2em black;
+        justify-content: center;
+        margin-top: 8px;
+        padding: 4px;
+    }
+    p.data {
+        font-size: 1.3em;
+        font-weight: bolder;
+    }
+    th {
+        border: solid 0.2em black;
+    }
+    td {
+        border: solid 0.2em black;
+    }
+    header{
+        background-color: #245300;
+        margin-left: 8px;
+    }
+    footer {
+        background-color: #D4FF9A;
+        height: 20vh;
+        margin-left: 8px;
+        padding: 8px;
+    }
+    footer,
+    article,
+    nav {
+        /* medida responsiva = 16px*/
+        
+        text-align: center;
+    }
+    footer {
+        padding-top: 0.4rem;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <nav class="col-1">
+        <h3>Sites Oficiais</h3>
+        <a href="http:\\www.saopaulofc.net">São Paulo Futebol Clube</a><br><br>
+        <a href="http:\\www.palmeiras.com.br">Sociedade Esportiva Palmeiras</a><br><br>
+        <a href="https://www.corinthians.com.br">Sport Club Corintrhians Paulista</a><br><br>
+        <a href="https://www.santosfc.com.br">Santos Futebol Clube</a><br><br>
+        <a href="https://www.guaranifc.com.br/">Guarani Futebol Clube</a><br><br>
+        <a href="https://futebolpaulista.com.br/Clubes">Clubes da Federação Paulista</a><br><br>
+    </nav>
+    <div class="col-2">
+        <header class="content">
+            <div class="headerlimits">
+                <img class="imagem" src="https://2.bp.blogspot.com/-URVX7B-tbmM/WHlnBAzmKgI/AAAAAAAAosI/8Bm2PX16sGob-MlLDsDmBfm6q0cW0aN_ACLcB/s1600/campeonato-paulista.jpg" alt="Campeonato Paulista">
+            </div>
+            <div>
+                <h1 class="titulo">Site oficial da Liga de Clubes Paulistas de Futebol</h1>
+                <p class="titulo ">Sinta toda a emoção do melhor futebol do país!</p>
+            </div>
+        </header>
+        <main class="content ">
+            <article class="bloco">
+                <h2>Campeonato Paulista</h2>
+                <p class="data">Temporada 2021</p>
+                <p class="data">Jogos em: 2 de maio</p>
+                <table style="width:100%">
+                    <tr>
+                        <th>Guarani</th>
+                        <th>2 x 1</th>
+                        <th>Novorizontino</th>
+                    </tr>
+                    <br />
+                    <tr>
+                        <th>Santo André</th>
+                        <th>0 x 1</th>
+                        <th>Palmeiras</th>
+                    </tr>
+                    <br />
+                    <tr>
+                        <th>Corinthians</th>
+                        <th>2 - 2</th>
+                        <th>São Paulo</th>
+                    </tr>
+                    <br />
+                    <tr>
+                        <th>Ituano</th>
+                        <th>2 - 1</th>
+                        <th>Ponte Preta</th>
+                    </tr>
+                </table>
+            </article>
+            <article class="bloco2">
+                <br/>
+                <a href="https://www.amazon.com.br">
+                    <img src="https://logodownload.org/wp-content/uploads/2014/04/amazon-logo-2.png" width="100vw">
+                </a>
+                <br/><br/>
+                <a href="https://www.primevideo.com/ref=dvm_crs_gat_br_ot_c_d_dashcard_premiere?_encoding=UTF8&benefitId=premierefcbr&contentId=pr.htemierefcbr&contentType=subscription.html" target="premiere">
+                    <img src="https://www.minhatorcida.com.br/imagens/post/12393/750xNxamazon-prime-premiere.jpg.pagespeed.ic.fbda5ea821.jpg" width="320em" height="310em">
+                </a>
+            </article>
+        </main>
+        <footer>
+            <p1>Em caso de dúvidas, sugestões ou reclamações chame a Liga DEV</p1>
+            <table>
+                <tr>
+                    <th>EQUIPE OMEGA</th>
+                    <th>Camila >> Code "CAMY"</th>
+                    <th>
+                        <img src="http://vignette3.wikia.nocookie.net/streetfighter/images/b/bc/Cammy_ilustraci%C3%B3n_Street_Fighter_IV_retrato.jpg/revision/latest?cb=20140313004306&path-prefix=es" width="70vw">
+                    </th>
+                    <th>Estela >> Code "ESTELAR"</th>
+                    <th>
+                        <img src="https://data.733online.com/wp-content/uploads/2019/12/estelar-jovens-titans.jpg" width="70vw" height="70vh">
+                    </th>
+                    <th>Ricieri >> Code "CONDE"</th>
+                    <th>
+                        <img src="https://i.pinimg.com/originals/d2/0a/0a/d20a0a0a9f1b6434299007c9d8821b4d.jpg" width="70vw" height="70vh">
+                    </th>
+                </tr>
+            </table>
+        </footer>
+    </div>
+</body>
+
+</html>

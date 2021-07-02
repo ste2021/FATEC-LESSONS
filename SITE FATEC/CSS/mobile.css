@@ -1,0 +1,69 @@
+@media only screen and (max-width: 600px){
+
+    .bd  placeholder  img  lg {
+        font-size: 0.5em;
+    }
+    h1{
+        font-size: 1.0em;
+    }
+    h2 #head{
+        font-size: 1.0em;
+        margin: 0.1em;
+    
+    }
+    
+    h3 #head{
+        font-size: 0.8em;
+        
+        margin: 0em;
+    }
+    .main{
+        
+        font-size: 1.5em;
+    }
+    .menu-item{
+        margin: 0 0 0 15%;
+    }
+    .menu1{
+        margin: 06% 0 0 0;
+    }
+    .menu{
+        width: 45%;
+        margin: 02% 0 0 1%;
+    }
+    .header {
+        font-size: 1.4em;
+    }
+    .navTable{
+        font-size: 0.5em;
+        margin: 01% 0 0 0;
+         
+    }
+   a{
+       font-size: 1.2em;
+   }
+    .footer {
+        width: 100%;
+        margin-top: 90%;
+        font-size: small;
+    }
+    .imgGrupo{
+        width: 40%;
+        height: auto;
+        margin: 02% 0 0 0;
+    }
+    .imgProjeto{
+        width: 40%;
+        height: auto;
+        margin: 02% 0 0 0;
+    }
+    .aviso{
+        font-size: 0.9em;
+    }
+    
+}
+@media only screen and (min-width: 600 max-width: 1200px){
+    .footer{
+        margin-top: 40%;
+    }
+}
