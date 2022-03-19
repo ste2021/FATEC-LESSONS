@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC
+    </title>
+
+    <script>
+        function pulaLinha() {
+            document.write("<br><hr><br>");
+        }
+
+        function calculaIMC(altura, peso) { 
+
+            return (peso / (altura * altura)).toFixed(2);
+        }    
+
+        var alturaInformada = prompt("Digite sua altura", "IMPORTANTE: Use pontos, não vírgulas");
+        var pesoInformado = prompt("Infome seu peso", "IMPORTANTE: Use pontos, não vírgulas");
+        var imc = calculaIMC(alturaInformada, pesoInformado);
+
+        function verificar() {
+            document.write("O IMC calculado é " + imc);
+            pulaLinha();
+
+            if (imc < 18.5) {
+                document.write("Você está com Magreza abaixo do normal, procure ajuda médica");
+            }
+            
+            if (imc > 30) {
+                document.write("Você está  com Obesidade, procure ajuda médica");
+            }          
+            if (imc <= 24.9 && imc >= 18.5) {
+                document.write("Parabéns!!! seu imc está Normal, continue se cuidando");
+            }
+            if (imc >= 25 && imc <= 30) {
+                document.write("Atenção!!! você está com Sobrepeso, procure praticar exercícios e se alimentar melhor");
+            }
+           
+        }
+               
+        verificar();
+        
+    </script>
+</head>
+<style>
+    body {
+        background-color: rgb(3, 87, 87);
+        color: antiquewhite;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2.0em;
+        margin: 20%;
+    }
+      
+</style>
+</head>
+
+<body>
+
+</body>
+
+</html>

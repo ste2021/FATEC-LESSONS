@@ -1,0 +1,38 @@
+<!-- 5) apresente todos os números pares de 0 e 10 (no corpo da página). -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Ímpares</title>
+</head>
+<style>
+    button {
+        background-color: blue;
+        color: aliceblue;
+    }
+</style>
+
+<body>
+    
+    <script>
+
+        function pulaLinha() { //Ex. 2
+            document.write("<br><hr><br>");
+        }
+        function escrever (num) {
+            document.write(num);
+            pulaLinha();
+        }
+
+
+         var cont = 1;
+         while (cont<=10) {           
+             escrever( "Número" + cont);
+             cont = cont +2;
+         }
+       
+    </script>
+</body>
+</html>

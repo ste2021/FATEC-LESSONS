@@ -1,0 +1,25 @@
+ <!-- Receba três números e apresente uma mensagem de alerta (ou no corpo da página) informando qual é o maior número dentre os números informados. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Maior Número</title>
+ </head>
+ <body>
+    
+     <script>
+ 
+         var nota1 = +prompt(" Informe o primeiro Número");
+         var nota2 = +prompt(" Informe o segundo Número");
+         var nota3 = +prompt("Informe o terceiro Número");
+
+         var arr = [nota1, nota2, nota3];
+         
+         var maior = Math.max(...arr) ;
+             alert("O número maior é: " + maior);
+ 
+     </script>
+ </body>
+ </html>

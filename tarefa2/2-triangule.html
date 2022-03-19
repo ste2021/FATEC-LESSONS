@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colocando IMC em uma função</title>
+
+    <script>
+        function pulaLinha() {
+            document.write("<br><hr><br>");
+        }
+    
+    var a = prompt("Digite O 1º número inteiro");
+    var b = prompt("Digite O 2º número inteiro");
+    var c = prompt("Digite O 3º número inteiro");
+    var d = a + b;
+    var e = b + c;
+    var f = a + c;
+
+    if (d > c && f > b && e > a) {
+        
+        if ( a==b && a==c) 
+            document.write("É UM TRIÂNGULO EQUILÁTERO")
+        else
+        if (a==b || a==c || b==c)
+            document.write("É UM TRIÂNGULO isóceles");
+        else 
+            document.write("É UM TRIÂNGULO escaleno")
+    }
+    else
+            document.write("NÃO É UM TRIÂNGULO")
+      
+        
+    </script>2
+</head>
+<style>
+    body {
+        background-color: rgb(16, 11, 32);
+        color: rgb(242, 240, 243);
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2.0em;
+        margin: 20%;
+    }
+      
+</style>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!-- apresente os números primos de 0 até 100 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros Primos
+
+    </title>
+
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+        function isPrime(num){
+            if(num < 2) 
+                return false;
+            for (var i= 2; i < num; i++) {
+                if(num%i==0)
+                    return false;
+            }
+            return true;
+        }
+
+        for(var i=0; i<100; i++) {
+            if(isPrime(i)) 
+                document.write(i)
+                pulaLinha()
+            
+                
+        }
+      
+       
+    </script>
+</head>
+<style>
+    body {
+        background-color: rgb(141, 71, 71);
+        color: rgb(250, 242, 242);
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2.0em;
+        margin: 05%;
+    }
+      
+</style>
+</head>
+
+<body>
+
+</body>
+
+</html>

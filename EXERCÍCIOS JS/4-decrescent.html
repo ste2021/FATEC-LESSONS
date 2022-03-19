@@ -1,0 +1,37 @@
+<!-- 4) apresente todos os números de 10 e 0 (no corpo da página) - decrescente. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Decrescentes</title>
+</head>
+<style>
+    button {
+        background-color: blue;
+        color: aliceblue;
+    }
+</style>
+
+<body>
+    
+    <script>
+
+        function pulaLinha() { //Ex. 2
+            document.write("<br><hr><br>");
+        }
+        function escrever (num) {
+            document.write(num);
+            pulaLinha();
+        }
+
+        for (a = 1; a<=10; a++) {
+            escrever("Número" + a);
+            
+        }
+         
+       
+    </script>
+</body>
+</html>
